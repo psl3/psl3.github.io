@@ -3,34 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SavvyFixes | Official Developer Site</title>
+    <title>SavvyFixes | Mobile Applications</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; background-color: #f9f9f9; }
-        .container { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #202124; margin-bottom: 10px; }
-        p { color: #5f6368; font-size: 1.1em; }
-        .links { margin-top: 30px; display: flex; justify-content: center; gap: 20px; }
-        .btn { text-decoration: none; background: #1a73e8; color: white; padding: 12px 24px; border-radius: 6px; font-weight: 500; transition: background 0.2s; }
-        .btn:hover { background: #1765cc; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #9aa0a6; }
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; padding: 3rem 1rem; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+        header p { opacity: 0.8; font-weight: 300; }
+        
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        
+        .app-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        
+        .app-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s; display: flex; flex-direction: column; }
+        .app-card:hover { transform: translateY(-5px); }
+        .app-card img { width: 100%; height: 200px; object-fit: cover; background: #eee; }
+        .app-content { padding: 1.5rem; flex-grow: 1; }
+        .app-content h2 { margin: 0 0 0.5rem 0; color: var(--primary); }
+        .app-content p { font-size: 0.95rem; color: #666; margin-bottom: 1.5rem; }
+        
+        .btn { display: inline-block; background: var(--accent); color: white; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: bold; font-size: 0.9rem; text-align: center; }
+        .btn:hover { background: #2980b9; }
+
+        footer { background: #ddd; padding: 2rem 1rem; text-align: center; margin-top: 4rem; font-size: 0.85rem; }
+        .footer-links a { color: var(--primary); margin: 0 10px; text-decoration: none; font-weight: bold; }
+        .footer-links a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>SavvyFixes</h1>
-        <p>Providing unique and high-quality gaming experiences on Google Play.</p>
-        
-        <div class="links">
-            <a href="https://doc-hosting.flycricket.io/five-0-privacy-policy/29e20a5c-f56b-43df-8131-5978c74f8ed0/privacy" class="btn">Privacy Policy</a>
-            <a href="mailto:savvyfixes@gmail.com" class="btn">Support Contact</a>
-        </div>
-    </div>
+<header>
+    <h1>SavvyFixes</h1>
+    <p>Clean, purposeful mobile experiences for Android</p>
+</header>
 
-    <div class="footer">
-        © 2026 SavvyFixes. All rights reserved. <br>
-        <a href="app-ads.txt" style="color: #9aa0a6; text-decoration: none;">Authorized Sellers (app-ads.txt)</a>
+<div class="container">
+    <div class="app-grid">
+        
+        <div class="app-card">
+            <img src="five0.png" alt="Five-0 Lite Gameplay">
+            <div class="app-content">
+                <h2>Five-0 Lite</h2>
+                <p>A strategic tile-placement game. Challenge the device by creating rows that sum to multiples of five. Simple to learn, difficult to master.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.five0&utm_source=emea_Med" class="btn">View on Google Play</a>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <img src="ntvisited.png" alt="NTVisited Property List">
+            <div class="app-content">
+                <h2>NTVisited</h2>
+                <p>This app compliments the National Trust's formal app and providing a method of ticking off which properties visited and the date visited which can be viewed in a list form or on a map. Additional brief information, and navigation is provided.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.NTVisited.NTVisited&utm_source=emea_Med" class="btn">View on Google Play</a>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <img src="dovetowers.png" alt="Bell Tower Map">
+            <div class="app-content">
+                <h2>Dove Towers</h2>
+                <p>This app provides a list of all Bell Ringing Towers and map locations enabling the user to record when they have visited/rang at the tower. Additional information such as number of bells and practice night is provided where available.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.DoveTowers.DoveTowers&utm_source=emea_Med" class="btn">View on Google Play</a>
+            </div>
+        </div>
+
     </div>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="privacy.html">Five-0 Privacy Policy</a> | 
+        <a href="privacy-general.html">General Privacy Policy</a> |
+        <a href="app-ads.txt">app-ads.txt</a>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2026 SavvyFixes. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
