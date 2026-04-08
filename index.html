@@ -33,6 +33,10 @@
         footer { background: #ddd; padding: 2rem 1rem; text-align: center; margin-top: 4rem; font-size: 0.85rem; }
         .footer-links a { color: var(--primary); margin: 0 10px; text-decoration: none; font-weight: bold; }
         .footer-links a:hover { text-decoration: underline; }
+        .button-container {
+             display: flex;
+             gap: 15px; /* This adds space ONLY between the items */
+        }
     </style>
 </head>
 <body>
@@ -46,29 +50,48 @@
     <div class="app-grid">
         
         <div class="app-card">
-            <img src="five0.png" alt="Five-0 Lite Gameplay">
+            <img src="five0.png" alt="Five-0 Gameplay">
             <div class="app-content">
-                <h2>Five-0 Lite</h2>
+                <h2>Five-0</h2>
                 <p>A strategic tile-placement game. Challenge the device by creating rows that sum to multiples of five. Simple to learn, difficult to master.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.five0&utm_source=emea_Med" class="btn">View on Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.five0&utm_source=emea_Med">
+                    <img src="gp_link_icon.png" alt="Get it on Google Play" style="max-width: 60%; height: auto; display: block;">
+                </a>
             </div>
         </div>
 
         <div class="app-card">
-            <img src="ntvisited.png" alt="NTVisited Property List">
+            <img src="ntvisited.png" alt="NTVisited Property Map">
             <div class="app-content">
                 <h2>NTVisited</h2>
                 <p>This app compliments the National Trust's formal app and providing a method of ticking off which properties visited and the date visited which can be viewed in a list form or on a map. Additional brief information, and navigation is provided.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.NTVisited.NTVisited&utm_source=emea_Med" class="btn">View on Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.NTVisited.NTVisited&utm_source=emea_Med">
+                    <img src="gp_link_icon.png" alt="Get it on Google Play" style="max-width: 60%; height: auto; display: block;">
+                </a>
             </div>
         </div>
 
         <div class="app-card">
-            <img src="dovetowers.png" alt="Bell Tower Map">
+            <img src="dovetowers.png" alt="Bell Tower List">
             <div class="app-content">
                 <h2>Dove Towers</h2>
                 <p>This app provides a list of all Bell Ringing Towers and map locations enabling the user to record when they have visited/rang at the tower. Additional information such as number of bells and practice night is provided where available.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.DoveTowers.DoveTowers&utm_source=emea_Med" class="btn">View on Google Play</a>
+                <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.DoveTowers.DoveTowers&utm_source=emea_Med">
+                    <img src="gp_link_icon.png" alt="Get it on Google Play" style="max-width: 60%; height: auto; display: block;">
+                </a>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <img src="callchanges.png" alt="Calls List">
+            <div class="app-content">
+                <h2>CallChanges</h2>
+                <p>This app supports learning to lead 'Call Changes' in Bell ringing. Select call sequences and learn required calls or practice ringing virtually, seeing changes in real time and hearing bells play your calls.</p>
+                <p>Currently in Closed Testing - please follow the links below to install and provide feedback!</p>
+                <div class="button-container">
+                    <a href="https://groups.google.com/g/savvyfixes_apptesters" class="btn">1. Open the link and press 'Join'</a> 
+                    <a href="https://play.google.com/store/apps/details?id=com.savvyfixes.callchanges" class="btn">2. Agree to be a tester and install</a>
+                </div>   
             </div>
         </div>
 
